@@ -7,7 +7,7 @@ config.read('config.ini', encoding='utf-8')
 
 def GetLink(LinkType=None):
 	if LinkType == None:
-		LinkType = 'gpl'
+		LinkType = 'gpl-shared'
 		try:
 			LinkType = config['get']['LinkType']
 		except:
